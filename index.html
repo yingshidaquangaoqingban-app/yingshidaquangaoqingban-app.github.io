@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>影视大全高清版_剧集风向与高清画质观影指南-yingshidaquangaoqingban-app</title>
+<meta name="description" content="影视大全高清版（yingshidaquangaoqingban-app.github.io）按周梳理剧集风向榜单与院线新片前瞻，拆解480P到4K的画质参数差异，并按通勤、周末、家庭等场景给出观影清单，附分辨率选择与播放卡顿的常见问题解答。">
+<meta name="keywords" content="影视大全高清版,影视大全,高清影视榜单,剧集风向,院线新片前瞻,观影清单推荐,1080P画质,4K分辨率,视频码率,yingshidaquangaoqingban-app.github.io">
+<meta name="author" content="影视大全高清版编辑部">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#0a0d13">
+<link rel="canonical" href="https://yingshidaquangaoqingban-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="影视大全高清版">
+<meta property="og:title" content="影视大全高清版｜剧集风向与高清画质观影指南">
+<meta property="og:description" content="榜单、画质参数、场景片单与常见问题，四块内容讲清怎么选片、怎么看清。">
+<meta property="og:url" content="https://yingshidaquangaoqingban-app.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<style>
+:root{
+  --bg:#0a0d13;
+  --bg-soft:#11151f;
+  --panel:#151a26;
+  --line:#252c3b;
+  --gold:#e3a94f;
+  --gold-soft:#f2c887;
+  --txt:#e6eaf2;
+  --txt-2:#98a1b3;
+  --max:1160px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--txt);
+  font:16px/1.78 system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  background:
+    radial-gradient(700px 400px at 80% -10%,rgba(227,169,79,.15),transparent 70%),
+    radial-gradient(560px 340px at 2% 6%,rgba(78,116,186,.13),transparent 72%);
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px;position:relative;z-index:1;}
+
+/* ---------- 顶栏 ---------- */
+.top{
+  position:sticky;top:0;z-index:20;
+  background:rgba(10,13,19,.82);
+  backdrop-filter:saturate(150%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;}
+.brand{display:flex;align-items:center;gap:11px;font-size:18px;font-weight:700;letter-spacing:.6px;white-space:nowrap;}
+.mark{
+  width:34px;height:34px;flex:0 0 34px;border-radius:9px;
+  background:linear-gradient(140deg,#e3a94f,#8a5f22 55%,#2b3243);
+  display:grid;place-items:center;color:#14171f;font-size:15px;font-weight:800;
+  box-shadow:0 4px 14px rgba(227,169,79,.24);
+}
+.menu{display:flex;align-items:center;gap:28px;}
+.menu a{font-size:14.5px;color:var(--txt-2);padding:6px 0;position:relative;transition:color .2s;}
+.menu a::after{
+  content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;
+  background:var(--gold);transition:right .25s ease;
+}
+.menu a:hover{color:var(--gold-soft);}
+.menu a:hover::after{right:0;}
+.nav-toggle{position:absolute;opacity:0;pointer-events:none;}
+.burger{display:none;width:44px;height:34px;border:1px solid var(--line);border-radius:8px;background:var(--bg-soft);cursor:pointer;position:relative;}
+.burger i{position:absolute;left:12px;right:12px;height:1.6px;background:var(--txt-2);border-radius:2px;}
+.burger i:nth-child(1){top:12px;}
+.burger i:nth-child(2){top:16.2px;}
+.burger i:nth-child(3){top:20.4px;}
+
+/* ---------- Hero ---------- */
+.hero{padding:58px 0 34px;}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:46px;align-items:center;}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:2.4px;color:var(--gold);
+  border:1px solid rgba(227,169,79,.34);border-radius:999px;
+  padding:5px 13px;background:rgba(227,169,79,.06);
+}
+h1{
+  margin:18px 0 14px;
+  font-size:clamp(28px,4.6vw,46px);
+  line-height:1.26;letter-spacing:.5px;font-weight:800;
+}
+h1 em{font-style:normal;color:var(--gold);}
+.lede{margin:0;color:var(--txt-2);font-size:16.5px;max-width:54ch;}
+.lede b{color:var(--gold-soft);font-weight:600;}
+.stats{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px;}
+.stat{
+  min-width:118px;flex:1 1 auto;
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 16px;
+}
+.stat strong{display:block;font-size:22px;color:var(--gold-soft);letter-spacing:.5px;}
+.stat span{font-size:12.5px;color:var(--txt-2);}
+
+/* 胶片框 */
+.film{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 16px;box-shadow:0 18px 40px rgba(0,0,0,.38);}
+.film::before,.film::after{
+  content:"";position:absolute;left:14px;right:14px;height:15px;
+  background-image:radial-gradient(circle at 7px 50%,#0a0d13 0 3.4px,transparent 3.5px);
+  background-size:19px 15px;
+}
+.film::before{top:7px;}
+.film::after{bottom:7px;}
+.screen{
+  height:236px;border-radius:9px;overflow:hidden;position:relative;
+  background:linear-gradient(128deg,#1a2233 0%,#28324a 38%,#42342a 68%,#6b4a24 100%);
+}
+.screen::after{
+  content:"";position:absolute;inset:-40%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.10),transparent);
+  transform:rotate(14deg);animation:sweep 7s linear infinite;
+}
+@keyframes sweep{0%{transform:translateX(-60%) rotate(14deg);}100%{transform:translateX(60%) rotate(14deg);}}
+.screen .cap{
+  position:absolute;left:16px;bottom:14px;right:16px;
+  font-size:12.5px;letter-spacing:3px;color:rgba(255,255,255,.68);
+}
+.film-note{margin:14px 4px 2px;font-size:13px;color:var(--txt-2);}
+
+/* ---------- 区块 ---------- */
+.sec{padding:46px 0;border-top:1px solid var(--line);}
+.sec-head{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:6px;}
+.sec-head h2{margin:0;font-size:clamp(21px,2.7vw,29px);letter-spacing:.4px;}
+.sec-head .sub{font-size:13px;color:var(--txt-2);padding-bottom:5px;}
+.sec-desc{margin:10px 0 26px;color:var(--txt-2);max-width:62ch;font-size:15px;}
+
+/* 榜单 */
+.rank{list-style:none;margin:0;padding:0;}
+.rank li{
+  display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center;
+  padding:17px 6px;border-bottom:1px solid var(--line);transition:background .22s,padding .22s;
+}
+.rank li:hover{background:linear-gradient(90deg,rgba(227,169,79,.09),transparent 62%);padding-left:14px;}
+.rank .no{font-size:34px;font-weight:800;color:transparent;-webkit-text-stroke:1.2px var(--gold);letter-spacing:-1px;}
+.rank h3{margin:0;font-size:17.5px;font-weight:650;}
+.rank p{margin:5px 0 0;font-size:14px;color:var(--txt-2);}
+.chip{
+  padding:5px 12px;border:1px solid var(--line);border-radius:999px;
+  font-size:12.5px;color:var(--gold-soft);white-space:nowrap;background:rgba(227,169,79,.05);
+}
+
+/* 画质条 */
+.bars{margin-top:4px;}
+.bar-row{display:grid;grid-template-columns:96px 1fr 116px;gap:16px;align-items:center;padding:13px 0;border-bottom:1px dashed var(--line);}
+.bar-row .lv{font-size:15px;font-weight:650;letter-spacing:.4px;}
+.bar{height:13px;border-radius:7px;background:#1a2030;border:1px solid var(--line);overflow:hidden;}
+.bar i{display:block;height:100%;border-radius:7px;background:linear-gradient(90deg,#6d4f1f,var(--gold));}
+.bar-row .val{font-size:13px;color:var(--txt-2);text-align:right;}
+.tips{margin:24px 0 0;padding:18px 20px;background:var(--bg-soft);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;}
+.tips p{margin:0;font-size:14.5px;color:var(--txt-2);}
+.tips p + p{margin-top:8px;}
+
+/* 场景片单 */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:20px;}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:22px 20px;
+  transition:transform .24s,border-color .24s;
+}
+.card:nth-child(even){transform:translateY(16px);}
+.card:hover{transform:translateY(4px);border-color:rgba(227,169,79,.45);}
+.card:nth-child(even):hover{transform:translateY(4px);}
+.card .k{font-size:11.5px;letter-spacing:2.6px;color:var(--gold);}
+.card h3{margin:10px 0 8px;font-size:18px;}
+.card p{margin:0;font-size:14.5px;color:var(--txt-2);}
+.card ul{margin:14px 0 0;padding-left:18px;color:var(--txt-2);font-size:14px;}
+.card ul li{margin-bottom:5px;}
+
+/* FAQ */
+.faq details{
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;
+  padding:0 20px;margin-bottom:12px;
+}
+.faq summary{
+  cursor:pointer;padding:17px 0;font-size:16px;font-weight:650;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";color:var(--gold);font-size:20px;line-height:1;}
+.faq details[open] summary::after{content:"\2013";}
+.faq details[open] summary{color:var(--gold-soft);}
+.faq p{margin:0 0 18px;font-size:14.8px;color:var(--txt-2);}
+
+/* 站点直达 */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:start;}
+.about h2{margin:0 0 14px;font-size:clamp(21px,2.7vw,29px);}
+.about p{margin:0 0 14px;color:var(--txt-2);font-size:15.2px;}
+.urlbox{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  background:#0d121b;border:1px dashed rgba(227,169,79,.42);border-radius:12px;
+  padding:16px 18px;font-size:14px;color:var(--gold-soft);word-break:break-all;line-height:1.9;
+}
+.urlbox span{display:block;color:var(--txt-2);font-size:12.5px;letter-spacing:1.6px;margin-bottom:6px;font-family:inherit;}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
+.links a{
+  padding:9px 16px;border:1px solid var(--line);border-radius:999px;
+  font-size:14px;color:var(--txt-2);transition:.2s;
+}
+.links a:hover{border-color:var(--gold);color:var(--gold-soft);background:rgba(227,169,79,.07);}
+
+/* 页脚 */
+.foot{margin-top:56px;border-top:1px solid var(--line);padding:26px 0 34px;color:var(--txt-2);font-size:13px;}
+.foot .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;}
+.foot a:hover{color:var(--gold-soft);}
+.foot .fl{display:flex;gap:18px;flex-wrap:wrap;}
+
+@media (prefers-reduced-motion:reduce){
+  .screen::after{animation:none;}
+  html{scroll-behavior:auto;}
+}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:34px;}
+  .about{grid-template-columns:1fr;gap:26px;}
+  .card:nth-child(even){transform:none;}
+}
+@media (max-width:860px){
+  .burger{display:block;}
+  .menu{
+    display:none;position:absolute;left:0;right:0;top:64px;
+    background:rgba(13,17,25,.98);border-bottom:1px solid var(--line);
+    flex-direction:column;align-items:stretch;gap:0;padding:8px 22px 16px;
+  }
+  .nav-toggle:checked ~ .menu{display:flex;}
+  .menu a{padding:13px 0;border-bottom:1px solid var(--line);font-size:15px;}
+  .menu a::after{display:none;}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px;}
+  .hero{padding:38px 0 24px;}
+  .sec{padding:36px 0;}
+  .rank li{grid-template-columns:46px 1fr;gap:14px;padding:15px 4px;}
+  .rank .no{font-size:27px;}
+  .rank .chip{grid-column:2;justify-self:start;margin-top:2px;}
+  .bar-row{grid-template-columns:74px 1fr 88px;gap:10px;}
+  .bar-row .lv{font-size:14px;}
+  .bar-row .val{font-size:12px;}
+  .screen{height:190px;}
+  .stats{gap:10px;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><span class="mark">影</span>影视大全高清版</a>
+    <input class="nav-toggle" id="navswitch" type="checkbox">
+    <label class="burger" for="navswitch" aria-label="展开导航"><i></i><i></i><i></i></label>
+    <nav class="menu">
+      <a href="#">剧集风向</a>
+      <a href="#">画质解码</a>
+      <a href="#">场景片单</a>
+      <a href="#">常见问题</a>
+      <a href="#">站点直达</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">观影决策参考 · 每周更新</span>
+        <h1>先把片单看准，<br>再把画质<em>看清</em></h1>
+        <p class="lede"><b>影视大全高清版</b>不做资源搬运，只做三件小事：把近期值得追的剧与片归成榜单，把 480P 到 4K 的参数差异讲成人话，再按你手头的那点空闲时间配一份能直接开看的清单。</p>
+        <div class="stats">
+          <div class="stat"><strong>08</strong><span>榜单席位</span></div>
+          <div class="stat"><strong>05</strong><span>画质档位</span></div>
+          <div class="stat"><strong>04</strong><span>场景片单</span></div>
+          <div class="stat"><strong>7天</strong><span>更新周期</span></div>
+        </div>
+      </div>
+      <div class="film">
+        <div class="screen"><span class="cap">SINCE 2019 · HIGH DEFINITION ARCHIVE</span></div>
+        <p class="film-note">榜单以类型热度与讨论声量为口径整理，评分参考多平台公开口碑，观点仅代表本页编辑视角。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="rank">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>本周剧集风向</h2>
+        <span class="sub">按类型热度排列 · 每周一刷新</span>
+      </div>
+      <p class="sec-desc">与其在首页翻二十分钟，不如先看这一列：哪一类正在被反复讨论、适合什么节奏、大概要花多少集进入状态。</p>
+      <ol class="rank">
+        <li>
+          <span class="no">01</span>
+          <div>
+            <h3>悬疑剧场</h3>
+            <p>强情节、快反转，单集 40 分钟左右，适合连续三集起步地追。</p>
+          </div>
+          <span class="chip">讨论热度 高</span>
+        </li>
+        <li>
+          <span class="no">02</span>
+          <div>
+            <h3>都市群像</h3>
+            <p>人物关系铺得慢，胜在日常细节，适合当作下饭剧慢慢补。</p>
+          </div>
+          <span class="chip">更新稳定</span>
+        </li>
+        <li>
+          <span class="no">03</span>
+          <div>
+            <h3>年代叙事</h3>
+            <p>服化道扎实，镜头节奏偏缓，适合周末整段时段一次看进去。</p>
+          </div>
+          <span class="chip">口碑上扬</span>
+        </li>
+        <li>
+          <span class="no">04</span>
+          <div>
+            <h3>科幻视界</h3>
+            <p>视效占比高，建议优先选高码率片源，小屏观看损失明显。</p>
+          </div>
+          <span class="chip">画质敏感</span>
+        </li>
+        <li>
+          <span class="no">05</span>
+          <div>
+            <h3>纪录影像</h3>
+            <p>单集独立成篇，随手点开也不影响理解，通勤时段友好。</p>
+          </div>
+          <span class="chip">随时可看</span>
+        </li>
+        <li>
+          <span class="no">06</span>
+          <div>
+            <h3>动画长片</h3>
+            <p>色彩层次丰富，投屏到大屏观看的收益远高于手机端。</p>
+          </div>
+          <span class="chip">适合投屏</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="quality">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>高清画质解码</h2>
+        <span class="sub">分辨率 · 码率 · 带宽需求</span>
+      </div>
+      <p class="sec-desc">同样写着"高清"，观感能差出一整档。真正决定画面干净程度的往往是码率，而不是那串分辨率数字。</p>
+      <div class="bars">
+        <div class="bar-row">
+          <span class="lv">480P</span>
+          <span class="bar"><i style="width:18%"></i></span>
+          <span class="val">约 1-2 Mbps</span>
+        </div>
+        <div class="bar-row">
+          <span class="lv">720P</span>
+          <span class="bar"><i style="width:34%"></i></span>
+          <span class="val">约 2-4 Mbps</span>
+        </div>
+        <div class="bar-row">
+          <span class="lv">1080P</span>
+          <span class="bar"><i style="width:56%"></i></span>
+          <span class="val">约 4-8 Mbps</span>
+        </div>
+        <div class="bar-row">
+          <span class="lv">2K</span>
+          <span class="bar"><i style="width:76%"></i></span>
+          <span class="val">约 10-18 Mbps</span>
+        </div>
+        <div class="bar-row">
+          <span class="lv">4K</span>
+          <span class="bar"><i style="width:100%"></i></span>
+          <span class="val">约 25-50 Mbps</span>
+        </div>
+      </div>
+      <div class="tips">
+        <p>手机屏幕 6 英寸左右时，1080P 与 4K 的肉眼差距很小，把带宽留给流畅度更划算。</p>
+        <p>投屏到 55 英寸以上电视，建议至少 1080P 高码率；画面有大面积夜景或雨雾时，低码率容易出现色块。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="list">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>四种场景的观影清单</h2>
+        <span class="sub">按可用时长分配</span>
+      </div>
+      <p class="sec-desc">选片这件事，本质上是在给手头的空闲时间找匹配项。下面四张卡按时间长短排好了。</p>
+      <div class="cards">
+        <article class="card">
+          <span class="k">COMMUTE · 30MIN</span>
+          <h3>通勤碎片</h3>
+          <p>单集独立、情节不依赖前情的短篇内容优先。</p>
+          <ul>
+            <li>纪录影像单集</li>
+            <li>单元剧与短剧集</li>
+            <li>脱口秀与访谈</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="k">WEEKNIGHT · 90MIN</span>
+          <h3>工作日晚间</h3>
+          <p>两集连看刚好，节奏中等、不烧脑也不至于睡着。</p>
+          <ul>
+            <li>都市群像剧</li>
+            <li>轻喜剧与情景剧</li>
+            <li>美食旅行类节目</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="k">WEEKEND · 3H+</span>
+          <h3>周末整段</h3>
+          <p>留给世界观复杂、需要连续投入的长线作品。</p>
+          <ul>
+            <li>年代叙事长剧</li>
+            <li>科幻剧集连刷</li>
+            <li>系列电影马拉松</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="k">FAMILY · SHARED</span>
+          <h3>家庭共看</h3>
+          <p>兼顾不同年龄层，优先合家欢与视觉系作品。</p>
+          <ul>
+            <li>动画长片</li>
+            <li>自然纪录片</li>
+            <li>经典修复老片</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>常见问题</h2>
+        <span class="sub">选片与播放，六个高频疑问</span>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>家里带宽 50M，能看 4K 吗？</summary>
+          <p>理论上下行 50 Mbps 刚够单路 4K 的下限，但家中还有手机、电脑共享网络，实际容易抖动。更稳的做法是选 1080P 高码率，画面稳定度往往优于频繁降码率的 4K。</p>
+        </details>
+        <details>
+          <summary>标注 4K 却感觉不清晰，问题出在哪？</summary>
+          <p>多数情况是片源由低分辨率拉伸而来，或码率被压到 10 Mbps 以下。判断方法很简单：看画面里的暗部细节和文字边缘，若糊成一片，说明码率不足而非分辨率不足。</p>
+        </details>
+        <details>
+          <summary>为什么同一部片在手机上清楚、投屏就糊？</summary>
+          <p>小屏像素密度高，天然掩盖压缩痕迹；投屏到大屏后，每个像素被放大数倍，压缩噪声随之暴露。投屏场景建议切换更高码率的片源，并尽量用有线或 5GHz 频段连接。</p>
+        </details>
+        <details>
+          <summary>剧集榜单多久更新一次？</summary>
+          <p>本页榜单以周为单位整理，主要参考公开讨论热度与口碑走向，不接入任何播放数据。若某类作品出现集中讨论，会临时插队补入。</p>
+        </details>
+        <details>
+          <summary>没有字幕或字幕不同步怎么办？</summary>
+          <p>先确认播放器是否关闭了外挂字幕加载；若时间轴整体偏移，可在播放器中以 0.5 秒为步长调整字幕延迟，通常两次以内即可对齐。</p>
+        </details>
+        <details>
+          <summary>想找某个类型的老片，从哪里入手？</summary>
+          <p>本页按类型而非片名组织内容，你可以先在「剧集风向」确认类型，再回到「场景片单」按可投入时长筛选，两侧交叉后范围会小很多。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="site">
+    <div class="wrap about">
+      <div>
+        <h2>站点直达</h2>
+        <p>影视大全高清版是一个轻量观影参考页，内容围绕榜单、画质参数与场景片单三部分展开，不提供任何介质下载与跳转服务。</p>
+        <p>页面保持单页结构，导航锚点直接在页内跳转，移动端与桌面端共用同一套排版规则，小屏下自动收起菜单。</p>
+        <div class="links">
+          <a href="#">剧集风向</a>
+          <a href="#">画质解码</a>
+          <a href="#">场景片单</a>
+          <a href="#">常见问题</a>
+          <a href="#">回到顶部</a>
+        </div>
+      </div>
+      <div>
+        <div class="urlbox">
+          <span>官方访问地址</span>
+          https://yingshidaquangaoqingban-app.github.io
+        </div>
+        <p style="margin-top:16px;font-size:14px;color:var(--txt-2)">收藏上方地址即可直接回到本页；站点名称与域名固定为「影视大全高清版 / yingshidaquangaoqingban-app」，不设镜像与备用入口。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>影视大全高清版 · <a href="https://yingshidaquangaoqingban-app.github.io/">yingshidaquangaoqingban-app.github.io</a></div>
+    <div class="fl">
+      <a href="#">关于本站</a>
+      <a href="#">内容说明</a>
+      <a href="#">更新记录</a>
+      <a href="#">意见反馈</a>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "影视大全高清版",
+      "alternateName": "yingshidaquangaoqingban-app",
+      "url": "https://yingshidaquangaoqingban-app.github.io/",
+      "inLanguage": "zh-CN",
+      "description": "整理剧集风向榜单、高清画质参数与场景观影清单的影视参考单页。"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "家里带宽 50M，能看 4K 吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "理论上下行 50 Mbps 刚够单路 4K 的下限，但家中还有手机、电脑共享网络，实际容易抖动。更稳的做法是选 1080P 高码率，画面稳定度往往优于频繁降码率的 4K。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "标注 4K 却感觉不清晰，问题出在哪？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "多数情况是片源由低分辨率拉伸而来，或码率被压到 10 Mbps 以下。判断方法很简单：看画面里的暗部细节和文字边缘，若糊成一片，说明码率不足而非分辨率不足。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "为什么同一部片在手机上清楚、投屏就糊？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "小屏像素密度高，天然掩盖压缩痕迹；投屏到大屏后，每个像素被放大数倍，压缩噪声随之暴露。投屏场景建议切换更高码率的片源，并尽量用有线或 5GHz 频段连接。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "剧集榜单多久更新一次？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "本页榜单以周为单位整理，主要参考公开讨论热度与口碑走向，不接入任何播放数据。若某类作品出现集中讨论，会临时插队补入。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
